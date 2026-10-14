@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandora'nın Kutusu | BTU Geçerken Blog</title>
+    <link href="https://cdn1.site-media.eu/images/114/22934790/GeerkenLogo-Photoroom-82aMDiSMSNM52OeysD1XRQ-EgWrwxwoIVNv8WhyNw0qWA.png" rel="icon" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Serif+TR:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    
+    <!-- Yollar klasör yapısına göre güncellendi -->
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .blog-container{max-width:860px;margin:40px auto 80px;background:var(--white);padding:50px 60px;border-radius:20px;box-shadow:var(--shadow);position:relative}
+        .hero-section{border-bottom:1px solid #eee;padding-bottom:30px;margin-bottom:40px}.badge{display:inline-block;background:rgba(26,92,58,0.08);color:var(--emerald);padding:6px 14px;border-radius:50px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:15px}
+        h1{font-family:'Amiri',serif;font-size:42px;line-height:1.25;margin-bottom:20px;color:var(--ink)}
+        .meta-info{font-family:'Syne',sans-serif;font-size:13px;color:var(--muted);display:flex;gap:20px;margin-bottom:20px}.meta-info i{color:var(--gold);margin-right:5px}
+        .summary-box{font-style:italic;border-left:3px solid var(--gold);padding:5px 0 5px 20px;color:var(--ink-soft);margin-bottom:30px}
+        .toc-box{background:#f9f8f4;border:1px solid var(--border);border-radius:12px;padding:25px;margin:40px 0}.toc-title{font-family:'Syne',sans-serif;font-weight:800;text-transform:uppercase;font-size:14px;letter-spacing:0.1em;color:var(--emerald);margin-bottom:15px;border-bottom:2px solid var(--emerald);display:inline-block}
+        .toc-box ul{list-style:none}.toc-box li{margin-bottom:10px}.toc-box a{text-decoration:none;color:var(--ink-soft);font-weight:500;font-size:15px;transition:color .2s;display:flex;align-items:center;gap:10px}.toc-box a:hover{color:var(--emerald)}.toc-box i{font-size:10px;color:var(--gold)}
+        .content p{font-size:17px;margin-bottom:25px;text-align:justify}h2{font-family:'Amiri',serif;font-size:28px;margin:50px 0 25px;color:var(--emerald-d);position:relative;padding-bottom:10px}h2::after{content:'';position:absolute;bottom:0;left:0;width:60px;height:3px;background:var(--gold);border-radius:2px}h3{font-family:'Amiri',serif;font-size:24px;margin:35px 0 15px;color:var(--ink);border-left:4px solid var(--emerald);padding-left:15px}
+        .sources-section{margin-top:60px;padding-top:30px;border-top:2px dashed #eee}.sources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:20px}.source-tag{background:white;border:1px solid #eee;padding:10px 15px;border-radius:8px;text-decoration:none;color:var(--emerald);font-size:13px;font-family:'Syne',sans-serif;font-weight:600;display:flex;align-items:center;gap:8px;transition:all .2s}.source-tag:hover{background:var(--emerald);color:white;transform:translateY(-2px)}
+        @media (max-width:768px){.blog-container{padding:30px 20px;border-radius:0;margin:0}h1{font-size:32px}nav{display:none}}
+        }
+    </style>
+</head>
+
+<body>
+	<!-- MODÜLER NAVBAR -->
+<header class="custom-navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="https://cdn1.site-media.eu/images/114/22934790/GeerkenLogo-Photoroom-82aMDiSMSNM52OeysD1XRQ-EgWrwxwoIVNv8WhyNw0qWA.png" alt="BTÜ Geçerken">
+      <div class="nav-logo-text">
+        <span class="nav-univ">Bursa Teknik Üniversitesi</span>
+        <span class="nav-comm">Geçerken Topluluğu</span>
+      </div>
+    </a>
+    <nav id="main-nav">
+      <a href="index.html" class="nav-link">Ana Sayfa</a>
+      <a href="etkinlikler.html" class="nav-link">Etkinlikler</a>
+      <a href="btugecerkenblog.html" class="nav-link active">BTU Geçerken BLOG</a>
+      <a href="https://btugecerkenai.btugecerken.com" class="nav-link">BTU GEÇERKEN AI</a>
+      <a href="ekibimiz.html" class="nav-link">Ekibimiz</a>
+      <a href="https://account.btugecerken.com" target="_blank" class="nav-btn-login">BTU GEÇERKEN ACCOUNT</a>
+    </nav>
+    <button id="mobile-menu-btn" aria-label="Menüyü aç/kapat">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+	
+	<article class="blog-container">
+    <div class="hero-section">
+        <span class="badge">Mitoloji</span>
+        <h1>Pandora'nın Kutusu: Merak, Ceza ve Umudun Hikayesi</h1>
+        <div class="meta-info">
+            <span><i class="far fa-user"></i>BTÜ Geçerken Editör Ekibi</span>
+            <span><i class="far fa-calendar"></i> 26 Temmuz 2026</span>
+            <span><i class="far fa-clock"></i> 5 dk okuma</span>
+        </div>
+        <div class="summary-box">
+            "Dünyanın tüm kötülükleri bir kutuya sığabilir mi? Peki ya o kutunun dibinde kalan tek şey neden umuttu?"
+        </div>
+    </div>
+
+    <!-- İÇİNDEKİLER -->
+    <div class="toc-box">
+        <span class="toc-title">İçindekiler</span>
+        <ul>
+            <li><a href="#pandora-kimdir"><i class="fas fa-chevron-right"></i> Pandora Kimdir?</a></li>
+			<li><a href="#mitin-dogusu"><i class="fas fa-chevron-right"></i> Prometheus’un Ateşi ve Zeus’un Gazabı</a></li>
+			<li><a href="#kutunun-acilisi"><i class="fas fa-chevron-right"></i> Kutunun Açılışı ve İçindeki Kötülükler</a></li>
+			<li><a href="#umut-temasi"><i class="fas fa-chevron-right"></i> Kutunun Dibindeki Hazine: Umut</a></li>
+            <li><a href="#btu-gecerken-yorum"><i class="fas fa-chevron-right"></i> BTÜ Geçerken Yorumu</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2 id="pandora-kimdir">Pandora Kimdir?</h2>
+        <p>Yunan mitolojisine göre Pandora, tanrılar tarafından yaratılan ilk kadındır. "Tüm bağışlar" veya "herkesin hediyesi" anlamına gelen ismi, her tanrının ona farklı bir yetenek veya güzellik bahşetmesinden gelir. Hephaistos onu balçıktan yoğurmuş, Athena ona el becerisi vermiş, Afrodit ona büyüleyici bir cazibe katmış, Hermes ise ona ikna edici bir dil ve bir miktar kurnazlık ilave etmiştir. Ancak bu mükemmel varlığın yaratılış amacı, aslında bir armağan değil, bir cezadır.</p>
+
+       <h3 id="mitin-dogusu">Prometheus’un Ateşi ve Zeus’un Gazabı</h3>
+        <p>Hikaye, titan Prometheus'un Olimpos'tan ateşi çalarak insanlığa vermesiyle başlar. Bu durum otoritesine bir başkaldırı olarak gören Zeus, hem Prometheus'u hem de onun sevdiği insanlığı cezalandırmak ister. Zeus, Pandora'yı yaratması için talimat verir ve onu Prometheus'un kardeşi Epimetheus'a gönderir. Prometheus, kardeşini tanrılardan gelecek hiçbir hediyeyi kabul etmemesi konusunda uyarsa da, Epimetheus Pandora'nın güzelliğine hayran kalarak onunla evlenmeyi kabul eder.</p>
+
+		<h3 id="kutunun-acilisi">Kutunun Açılışı ve İçindeki Kötülükler</h3>
+		<p>Zeus, Pandora'ya düğün hediyesi olarak süslü bir kutu (bazı kaynaklarda kavanoz/pithos) verir ancak bu kutuyu asla açmaması gerektiğini kesin bir dille belirtir. Ancak Hermes'in ona verdiği merak duygusu Pandora'yı rahat bırakmaz. Bir gün merakına yenik düşen Pandora, kutunun kapağını hafifçe aralar. O anda kutudan hastalıklar, kederler, kıskançlıklar, savaşlar ve dünyanın tüm kötülükleri karanlık bir duman gibi çıkarak insanlığın üzerine yayılır.</p>
+		
+		<h3 id="umut-temasi">Kutunun Dibindeki Hazine: Umut</h3>
+		<p>Korkuya kapılan Pandora hemen kutunun kapağını kapatır. Ancak her şey çoktan dışarı çıkmıştır. Kutunun içinde kalan tek bir şey vardır: **Elpis**, yani Umut. Mitolojiye göre kötülükler dünyaya yayıldığında insanlığı hayatta tutan ve onlara direnme gücü veren tek şey, o kutunun dibinde kalan umut olmuştur. Eğer o da kaçsaydı, insanoğlu karşılaştığı felaketlerle baş edemeyip yok olacaktı.</p>
+
+        <!-- Önemli: Geçerken Yorumu Bölümü -->
+      <h3 id="btu-gecerken-yorum">BTÜ Geçerken Yorumu</h3>
+        <p>Pandora miti, insan merakının sınırlarını ve karşılaşılan zorluklar karşısında "umudun" sahip olduğu hayati önemi simgeler. Akademik hayatımızda da bazen Pandora'nın kutusunu andıran zorlu sınavlar veya çözülmesi imkansız görünen problemlerle karşılaşabiliriz. Kötülükler ve zorluklar ne kadar yayılırsa yayılsın, üniversite yaşantımızda bizi ayakta tutan şey her zaman bir sonraki adımın daha iyi olacağına dair duyduğumuz o küçük umuttur. Pes etmek yerine kutunun dibine, o sönmeyen ışığa bakmaya devam edin!</p>
+
+        <div class="sources-section">
+            <span class="toc-title">Faydalı Linkler</span>
+            <div class="sources-grid">
+                <a href="https://btugecerken.com/yunan-mitolojisi.html" class="source-tag" target="_blank"><i class="fas fa-link"></i> Mitoloji Rehberi</a>
+                <a href="https://btugecerken.com/antik-yunan-sanati.html" class="source-tag" target="_blank"><i class="fas fa-link"></i> Antik Yunan Sanatı</a>
+                <a href="https://btugecerken.com/felsefe-tarihi.html" class="source-tag" target="_blank"><i class="fas fa-link"></i> Felsefeye Giriş</a>
+            </div>
+        </div>
+    </div>
+</article>
+	
+	<script>
+    document.querySelectorAll('.toc-box a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerOffset = 100;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+            }
+        });
+    });
+</script>
+	<script>
+ window.difyChatbotConfig = {
+  token: 'm9msFftlLZCRyPBD',
+  baseUrl: 'https://ai.btugecerken.com',
+  inputs: {},
+  systemVariables: {},
+  userVariables: {
+    avatar_url: "https://btugecerken.com/BTU_Gecerken_AI_Blog%20Asistan.png",
+  },
+ }
+</script>
+<script
+ src="https://ai.btugecerken.com/embed.min.js"
+ id="m9msFftlLZCRyPBD"
+ defer>
+</script><script src="navbar.js"></script>
+<script src="script.js"></script>
+	
+</body>
+</html>

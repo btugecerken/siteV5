@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>BTÜ Geçerken Topluluğu | Blog</title>
+  
+  <link rel="icon" href="https://btugecerken.com/logogecerken-Photoroom (1).ico">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=Noto+Serif+TR:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+<body class="blog-chatbot">
+
+<!-- ═══ REVEALED NAVBAR ═══ -->
+<header class="custom-navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="https://btugecerken.com/logogecerken-Photoroom (1).ico" alt="BTÜ Geçerken">
+      <div class="nav-logo-text">
+        <span class="nav-univ">Bursa Teknik Üniversitesi</span>
+        <span class="nav-comm">Geçerken Topluluğu</span>
+      </div>
+    </a>
+
+    <nav id="main-nav">
+      <a href="index.html" class="nav-link">Ana Sayfa</a>
+      <a href="etkinlikler.html" class="nav-link">Etkinlikler</a>
+      <a href="btugecerkenblog.html" class="nav-link active">BTÜ Geçerken BLOG</a>
+      <a href="btugecerkenai.html" class="nav-link">BTÜ GEÇERKEN AI</a>
+      <a href="ekibimiz.html" class="nav-link">Ekibimiz</a>
+      <a href="btugecerkentv.html" target="_blank" class="nav-btn-login">BTÜ GEÇERKEN TV</a>
+    </nav>
+
+    <button id="mobile-menu-btn" aria-label="Menüyü aç/kapat">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <div class="section-inner">
+      <div class="section-label" data-reveal>YAZILAR & MAKALELER</div>
+      <h1 class="hero-title" data-reveal>BTÜ Geçerken <em>Blog</em></h1>
+      <p class="hero-subtitle" data-reveal data-delay="1">BTÜ hayatı, rehberler, akademik ve özgün içerikler.</p>
+    </div>
+  </section>
+
+  <!-- BLOG İÇERİK KAPSAYICISI -->
+  <div class="container blog-container">
+	  
+	  <!-- Kategori Filtre Butonları -->
+    <div class="category-bar" id="categoryBar" data-reveal>
+      <button class="cat-btn active" onclick="filterCategory('Tümü')">Tümü</button>
+      <button class="cat-btn" onclick="filterCategory('İslam Felsefesi')">İslam Felsefesi</button>
+      <button class="cat-btn" onclick="filterCategory('Sanat Tarihi')">Sanat Tarihi</button>
+      <button class="cat-btn" onclick="filterCategory('Account Original')">Account Original</button>
+    </div>
+
+    <!-- Blog Kartları Grid Alanı -->
+    <div class="blog-grid" id="blogGrid"></div>
+
+    <!-- Sayfalama (Pagination) -->
+    <div class="pagination-container" id="pagination"></div>
+
+  </div>
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- 1. Sütun: Marka & Misyon -->
+    <div class="footer-col footer-brand">
+      <div class="f-logo">
+        <img src="https://cdn1.site-media.eu/images/114/22934790/GeerkenLogo-Photoroom-82aMDiSMSNM52OeysD1XRQ-EgWrwxwoIVNv8WhyNw0qWA.png" alt="BTÜ Geçerken Logo">
+        <h3>BTÜ Geçerken</h3>
+      </div>
+      <p class="f-desc">Bursa Teknik Üniversitesi bünyesinde ilmi, kültürel ve dijital üretimleri buluşturan öğrenci topluluğu.</p>
+      <div class="f-motto">"Geçerken Güzel Bir İz Bırak"</div>
+    </div>
+
+    <!-- 2. Sütun: Hızlı Bağlantılar -->
+    <div class="footer-col">
+      <h4 class="f-title">Ekosistem</h4>
+      <ul class="f-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="etkinlikler.html">Etkinlikler</a></li>
+        <li><a href="btugecerkenblog.html">BTÜ Geçerken Blog</a></li>
+        <li><a href="btugecerkentv.html" target="_blank">BTÜ Geçerken TV</a></li>
+        <li><a href="btugecerkenai.html">BTÜ Geçerken AI</a></li>
+      </ul>
+    </div>
+
+    <!-- 3. Sütun: İletişim & Katılım -->
+    <div class="footer-col">
+      <h4 class="f-title">Katılım & İletişim</h4>
+      <p class="f-contact-info"><i class="fa-solid fa-location-dot"></i> Mimar Sinan Yerleşkesi, Yıldırım / BURSA</p>
+      <p class="f-contact-info"><i class="fa-solid fa-envelope"></i> <a href="mailto:info@btugecerken.com">info@btugecerken.com</a></p>
+      
+      <div class="f-actions">
+        <a href="https://bys3.btu.edu.tr/ogrenci/giris/42" target="_blank" class="f-btn-join">
+          <i class="fa-solid fa-user-plus"></i> Topluluğa Katıl
+        </a>
+        <a href="https://www.instagram.com/btugecerkentoplulugu/" target="_blank" class="f-social-btn" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Alt Telif & Yasal Şerit -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span>© 2026 BTÜ Geçerken Topluluğu. Tüm Hakları Saklıdır.</span>
+      <div class="f-legal-links">
+        <a href="yasal-uyari.html">Yasal Uyarı & Gizlilik</a>
+        <a href="btugecerken.com">btugecerken.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTLER -->
+<script src="navbar.js"></script>
+<script src="script.js"></script>
+<script src="blog.js?v1.1"></script>
+</body>
+</html>

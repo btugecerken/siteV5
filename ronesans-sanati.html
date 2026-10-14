@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rönesans | BTU Geçerken Blog</title>
+    <link href="https://cdn1.site-media.eu/images/114/22934790/GeerkenLogo-Photoroom-82aMDiSMSNM52OeysD1XRQ-EgWrwxwoIVNv8WhyNw0qWA.png" rel="icon" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Serif+TR:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    
+    <!-- Yollar klasör yapısına göre güncellendi -->
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .blog-container{max-width:860px;margin:40px auto 80px;background:var(--white);padding:50px 60px;border-radius:20px;box-shadow:var(--shadow);position:relative}
+        .hero-section{border-bottom:1px solid #eee;padding-bottom:30px;margin-bottom:40px}.badge{display:inline-block;background:rgba(26,92,58,0.08);color:var(--emerald);padding:6px 14px;border-radius:50px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:15px}
+        h1{font-family:'Amiri',serif;font-size:42px;line-height:1.25;margin-bottom:20px;color:var(--ink)}
+        .meta-info{font-family:'Syne',sans-serif;font-size:13px;color:var(--muted);display:flex;gap:20px;margin-bottom:20px}.meta-info i{color:var(--gold);margin-right:5px}
+        .summary-box{font-style:italic;border-left:3px solid var(--gold);padding:5px 0 5px 20px;color:var(--ink-soft);margin-bottom:30px}
+        .toc-box{background:#f9f8f4;border:1px solid var(--border);border-radius:12px;padding:25px;margin:40px 0}.toc-title{font-family:'Syne',sans-serif;font-weight:800;text-transform:uppercase;font-size:14px;letter-spacing:0.1em;color:var(--emerald);margin-bottom:15px;border-bottom:2px solid var(--emerald);display:inline-block}
+        .toc-box ul{list-style:none}.toc-box li{margin-bottom:10px}.toc-box a{text-decoration:none;color:var(--ink-soft);font-weight:500;font-size:15px;transition:color .2s;display:flex;align-items:center;gap:10px}.toc-box a:hover{color:var(--emerald)}.toc-box i{font-size:10px;color:var(--gold)}
+        .content p{font-size:17px;margin-bottom:25px;text-align:justify}h2{font-family:'Amiri',serif;font-size:28px;margin:50px 0 25px;color:var(--emerald-d);position:relative;padding-bottom:10px}h2::after{content:'';position:absolute;bottom:0;left:0;width:60px;height:3px;background:var(--gold);border-radius:2px}h3{font-family:'Amiri',serif;font-size:24px;margin:35px 0 15px;color:var(--ink);border-left:4px solid var(--emerald);padding-left:15px}
+        .sources-section{margin-top:60px;padding-top:30px;border-top:2px dashed #eee}.sources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:20px}.source-tag{background:white;border:1px solid #eee;padding:10px 15px;border-radius:8px;text-decoration:none;color:var(--emerald);font-size:13px;font-family:'Syne',sans-serif;font-weight:600;display:flex;align-items:center;gap:8px;transition:all .2s}.source-tag:hover{background:var(--emerald);color:white;transform:translateY(-2px)}
+        @media (max-width:768px){.blog-container{padding:30px 20px;border-radius:0;margin:0}h1{font-size:32px}nav{display:none}}
+        }
+    </style>
+</head>
+
+
+<body>
+<!-- MODÜLER NAVBAR -->
+<header class="custom-navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="https://cdn1.site-media.eu/images/114/22934790/GeerkenLogo-Photoroom-82aMDiSMSNM52OeysD1XRQ-EgWrwxwoIVNv8WhyNw0qWA.png" alt="BTÜ Geçerken">
+      <div class="nav-logo-text">
+        <span class="nav-univ">Bursa Teknik Üniversitesi</span>
+        <span class="nav-comm">Geçerken Topluluğu</span>
+      </div>
+    </a>
+    <nav id="main-nav">
+      <a href="index.html" class="nav-link">Ana Sayfa</a>
+      <a href="etkinlikler.html" class="nav-link">Etkinlikler</a>
+      <a href="btugecerkenblog.html" class="nav-link active">BTU Geçerken BLOG</a>
+      <a href="https://btugecerkenai.btugecerken.com" class="nav-link">BTU GEÇERKEN AI</a>
+      <a href="ekibimiz.html" class="nav-link">Ekibimiz</a>
+      <a href="https://account.btugecerken.com" target="_blank" class="nav-btn-login">BTU GEÇERKEN ACCOUNT</a>
+    </nav>
+    <button id="mobile-menu-btn" aria-label="Menüyü aç/kapat">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<article class="blog-container">
+  <div class="hero-section">
+    <span class="badge">Sanat Tarihi</span>
+    <h1>Rönesans Sanatı: İnsanlığın ve Doğanın Yeniden Doğuşu</h1>
+    <div class="meta-info">
+      <span><i class="far fa-user"></i>BTÜ Geçerken Editör Ekibi</span>
+      <span><i class="far fa-calendar"></i> 31 Temmuz 2026</span>
+      <span><i class="far fa-clock"></i> 12–16 dk okuma</span>
+    </div>
+    <div class="summary-box">
+      "14. ve 16. yüzyıllar arasında İtalya merkezli başlayan Rönesans, antik Yunan ve Roma değerlerinin yeniden keşfedildiği, sanatın bilimle harmanlandığı ve hümanizmin zirve yaptığı altın çağdır."
+    </div>
+  </div>
+
+  <div class="toc-box">
+    <span class="toc-title">İçindekiler</span>
+    <ul>
+      <li><a href="#giris"><i class="fas fa-chevron-right"></i> Giriş: Rönesans Nedir?</a></li>
+      <li><a href="#humanizm"><i class="fas fa-chevron-right"></i> Hümanizm ve Sanata Etkisi</a></li>
+      <li><a href="#teknik-devrimler"><i class="fas fa-chevron-right"></i> Teknik Devrimler: Perspektif ve Anatomi</a></li>
+      <li><a href="#uc-buyukler"><i class="fas fa-chevron-right"></i> Rönesans'ın Üç Büyüğü: Da Vinci, Michelangelo, Rafael</a></li>
+      <li><a href="#kuzey-ronesansi"><i class="fas fa-chevron-right"></i> Kuzey Rönesansı: Detay ve Gerçekçilik</a></li>
+      <li><a href="#btu-gecerken-yorum"><i class="fas fa-chevron-right"></i> BTÜ Geçerken Yorumu</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2 id="giris">Giriş: Rönesans Nedir?</h2>
+    <p>Fransızca "Renaissance" yani "Yeniden Doğuş" anlamına gelen bu dönem, Avrupa'nın Orta Çağ karanlığından çıkıp Klasik Antik Çağ (Yunan ve Roma) bilgi ve estetiğine geri dönüşünü simgeler. Ancak bu sadece bir taklit değildir; Rönesans, modern dünyanın temellerini atan bilimsel gözlem, bireysellik ve rasyonalizmin sanattaki yansımasıdır. Din odaklı dünyadan insan odaklı dünyaya geçişin en estetik kanıtıdır.</p>
+
+    <h2 id="humanizm">Hümanizm ve Sanata Etkisi</h2>
+    <p>Rönesans'ın merkez yakıtı Hümanizmdir. Hümanizm, insanın yeteneklerine, kapasitesine ve bu dünyadaki yaşamına değer verir. Sanatta bu durum, dini figürlerin dahi insani duygularla ve gerçekçi mekanlarda tasvir edilmesine yol açmıştır. Azizler artık karanlık, altın varaklı boşluklarda değil; ağaçların, kuşların olduğu ve arkada şehirlerin göründüğü gerçek manzaralarda resmedilmeye başlanmıştır.</p>
+
+    <h2 id="teknik-devrimler">Teknik Devrimler: Perspektif ve Anatomi</h2>
+    <p>Rönesans sanatçıları birer bilim insanı gibi çalışmıştır. En önemli iki devrim şunlardır:</p>
+    <ul>
+      <li><strong>Doğrusal Perspektif:</strong> Brunelleschi tarafından sistemleştirilen bu yöntem, iki boyutlu tuvalde derinlik hissi (üç boyut) yaratılmasını sağlamıştır.</li>
+      <li><strong>Anatomi Gözlemi:</strong> Sanatçılar (özellikle Leonardo), insan vücudunun kas ve kemik yapısını anlamak için diseksiyonlar yapmış, bu sayede figürleri tarihte görülmemiş bir gerçekçilikle resmetmişlerdir.</li>
+      <li><strong>Işık ve Gölge (Chiaroscuro):</strong> Hacim kazandırmak için ışığın nesneler üzerindeki düşüşünü matematiksel bir titizlikle işlemişlerdir.</li>
+    </ul>
+
+    <h2 id="uc-buyukler">Rönesans'ın Üç Büyüğü: Da Vinci, Michelangelo, Rafael</h2>
+    <p>Bu üç isim, Yüksek Rönesans'ın doruk noktasını temsil eder:</p>
+    <ul>
+      <li><strong>Leonardo da Vinci:</strong> "Sfumato" (renklerin dumanlı geçişi) tekniğinin ustasıdır. Mona Lisa ve Son Akşam Yemeği ile hem gizemi hem de kusursuz kompozisyonu sanat tarihine kazımıştır.</li>
+      <li><strong>Michelangelo:</strong> Bir heykeltıraşın gözüyle resim yapan sanatçıdır. Sistina Şapeli'nin tavanı ve Davut Heykeli ile insanın fiziksel gücünü ve ruhsal gerilimini en üst seviyeye taşımıştır.</li>
+      <li><strong>Rafael:</strong> İdeal güzellik ve uyumun sanatçısıdır. "Atina Okulu" tablosu, Rönesans'ın bilgelik ve felsefeye olan saygısının görkemli bir özetidir.</li>
+    </ul>
+
+    <h2 id="kuzey-ronesansi">Kuzey Rönesansı: Detay ve Gerçekçilik</h2>
+    <p>İtalyan Rönesansı ideal güzelliğe odaklanırken, Jan van Eyck ve Albrecht Dürer gibi sanatçıların öncülük ettiği Kuzey (Hollanda, Almanya) Rönesansı, yağlı boyanın imkanlarını sonuna kadar kullanarak mikroskobik detaylara ve günlük yaşamın gerçekliğine odaklanmıştır. Sembolizm bu eserlerde hala çok güçlüdür.</p>
+
+    <h2 id="btu-gecerken-yorum">BTÜ Geçerken Yorumu</h2>
+    <p>Rönesans, teknik becerinin entelektüel merakla birleştiğinde neler başarabileceğinin en büyük kanıtıdır. Bir mühendislik öğrencisi için Rönesans sanatçıları, sadece ressam değil; aynı zamanda anatomi uzmanı, mimar ve şehir plancısıdır. Leonardo'nun not defterlerindeki çizimlerine bir göz atmak, disiplinler arası düşünmenin kökenlerini anlamamızı sağlar. Unutmayın, perspektif sadece resimde derinlik değil, hayata bakışta rasyonel bir vizyondur.</p>
+
+    <div class="further-reading">
+      <span class="toc-title">Faydalı Linkler</span>
+      <div class="sources-grid">
+        <a href="https://www.louvre.fr/en" class="source-tag" target="_blank"><i class="fas fa-link"></i> Louvre Müzesi Dijital Arşivi</a>
+        <a href="https://www.metmuseum.org" class="source-tag" target="_blank"><i class="fas fa-link"></i> The MET - Rönesans Koleksiyonu</a>
+        <a href="https://btugecerken.com/barok.html" class="source-tag" target="_blank"><i class="fas fa-link"></i> Bir Sonraki Durak: Barok Sanatı</a>
+        <a href="https://artsandculture.google.com/project/renaissance" class="source-tag" target="_blank"><i class="fas fa-link"></i> Google Arts - Renaissance Guide</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+<script>
+  document.querySelectorAll('.toc-box a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+              const headerOffset = 100;
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+              window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+          }
+      });
+  });
+</script>
+
+<script src="navbar.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

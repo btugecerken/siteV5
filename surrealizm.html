@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sürrealizm | BTU Geçerken Blog</title>
+    <link href="https://cdn1.site-media.eu/images/114/22934790/GeerkenLogo-Photoroom-82aMDiSMSNM52OeysD1XRQ-EgWrwxwoIVNv8WhyNw0qWA.png" rel="icon" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Serif+TR:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    
+    <!-- Yollar klasör yapısına göre güncellendi -->
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .blog-container{max-width:860px;margin:40px auto 80px;background:var(--white);padding:50px 60px;border-radius:20px;box-shadow:var(--shadow);position:relative}
+        .hero-section{border-bottom:1px solid #eee;padding-bottom:30px;margin-bottom:40px}.badge{display:inline-block;background:rgba(26,92,58,0.08);color:var(--emerald);padding:6px 14px;border-radius:50px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:15px}
+        h1{font-family:'Amiri',serif;font-size:42px;line-height:1.25;margin-bottom:20px;color:var(--ink)}
+        .meta-info{font-family:'Syne',sans-serif;font-size:13px;color:var(--muted);display:flex;gap:20px;margin-bottom:20px}.meta-info i{color:var(--gold);margin-right:5px}
+        .summary-box{font-style:italic;border-left:3px solid var(--gold);padding:5px 0 5px 20px;color:var(--ink-soft);margin-bottom:30px}
+        .toc-box{background:#f9f8f4;border:1px solid var(--border);border-radius:12px;padding:25px;margin:40px 0}.toc-title{font-family:'Syne',sans-serif;font-weight:800;text-transform:uppercase;font-size:14px;letter-spacing:0.1em;color:var(--emerald);margin-bottom:15px;border-bottom:2px solid var(--emerald);display:inline-block}
+        .toc-box ul{list-style:none}.toc-box li{margin-bottom:10px}.toc-box a{text-decoration:none;color:var(--ink-soft);font-weight:500;font-size:15px;transition:color .2s;display:flex;align-items:center;gap:10px}.toc-box a:hover{color:var(--emerald)}.toc-box i{font-size:10px;color:var(--gold)}
+        .content p{font-size:17px;margin-bottom:25px;text-align:justify}h2{font-family:'Amiri',serif;font-size:28px;margin:50px 0 25px;color:var(--emerald-d);position:relative;padding-bottom:10px}h2::after{content:'';position:absolute;bottom:0;left:0;width:60px;height:3px;background:var(--gold);border-radius:2px}h3{font-family:'Amiri',serif;font-size:24px;margin:35px 0 15px;color:var(--ink);border-left:4px solid var(--emerald);padding-left:15px}
+        .sources-section{margin-top:60px;padding-top:30px;border-top:2px dashed #eee}.sources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:20px}.source-tag{background:white;border:1px solid #eee;padding:10px 15px;border-radius:8px;text-decoration:none;color:var(--emerald);font-size:13px;font-family:'Syne',sans-serif;font-weight:600;display:flex;align-items:center;gap:8px;transition:all .2s}.source-tag:hover{background:var(--emerald);color:white;transform:translateY(-2px)}
+        @media (max-width:768px){.blog-container{padding:30px 20px;border-radius:0;margin:0}h1{font-size:32px}nav{display:none}}
+        }
+    </style>
+</head>
+
+<body>
+<!-- MODÜLER NAVBAR -->
+<header class="custom-navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="https://cdn1.site-media.eu/images/114/22934790/GeerkenLogo-Photoroom-82aMDiSMSNM52OeysD1XRQ-EgWrwxwoIVNv8WhyNw0qWA.png" alt="BTÜ Geçerken">
+      <div class="nav-logo-text">
+        <span class="nav-univ">Bursa Teknik Üniversitesi</span>
+        <span class="nav-comm">Geçerken Topluluğu</span>
+      </div>
+    </a>
+    <nav id="main-nav">
+      <a href="index.html" class="nav-link">Ana Sayfa</a>
+      <a href="etkinlikler.html" class="nav-link">Etkinlikler</a>
+      <a href="btugecerkenblog.html" class="nav-link active">BTU Geçerken BLOG</a>
+      <a href="https://btugecerkenai.btugecerken.com" class="nav-link">BTU GEÇERKEN AI</a>
+      <a href="ekibimiz.html" class="nav-link">Ekibimiz</a>
+      <a href="https://account.btugecerken.com" target="_blank" class="nav-btn-login">BTU GEÇERKEN ACCOUNT</a>
+    </nav>
+    <button id="mobile-menu-btn" aria-label="Menüyü aç/kapat">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+<article class="blog-container">
+  <div class="hero-section">
+    <span class="badge">Sanat Akımları</span>
+    <h1>Sürrealizm: Bilinçdışı, Rüya ve Rastlantının Sanata Dökümü</h1>
+    <div class="meta-info">
+      <span><i class="far fa-user"></i>BTÜ Geçerken Editör Ekibi</span>
+      <span><i class="far fa-calendar"></i> 3 Ağustos 2026</span>
+      <span><i class="far fa-clock"></i> 12–16 dk okuma</span>
+    </div>
+    <div class="summary-box">
+      "Sürrealizm, bilinçdışının, rüyaların ve rastlantının estetize edildiği 20. yüzyılın öncü avangard hareketlerinden biridir; gerçeklikle fanteziyi harmanlayarak yeni anlamlar üretir."
+    </div>
+  </div>
+
+  <div class="toc-box">
+    <span class="toc-title">İçindekiler</span>
+    <ul>
+      <li><a href="#giris"><i class="fas fa-chevron-right"></i> Giriş: Sürrealizm Nedir?</a></li>
+      <li><a href="#tarihsel-arkaplan"><i class="fas fa-chevron-right"></i> Tarihsel Arka Plan ve Freud Etkisi</a></li>
+      <li><a href="#ilkeler-ve-yontemler"><i class="fas fa-chevron-right"></i> Temel İlkeler ve Yöntemler (Otomatizm, Kolaj, Parçalama)</a></li>
+      <li><a href="#onemli-sanatcilar"><i class="fas fa-chevron-right"></i> Önemli Temsilciler ve İkonik Eserler</a></li>
+      <li><a href="#edebiyat-ve-sinemadaki-yansimalari"><i class="fas fa-chevron-right"></i> Edebiyat, Sinema ve Tasarımdaki Yansımaları</a></li>
+      <li><a href="#etki-ve-miras"><i class="fas fa-chevron-right"></i> Günümüz Sanatına Etkisi ve Eleştiriler</a></li>
+      <li><a href="#btu-gecerken-yorum"><i class="fas fa-chevron-right"></i> BTÜ Geçerken Yorumu</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2 id="giris">Giriş: Sürrealizm Nedir?</h2>
+    <p>Sürrealizm (Sürrealism), 1920'lerde Paris merkezli doğmuş, bilinçdışını, rüyaları ve rastlantıyı sanat üretiminin merkezine koyan bir kültürel harekettir. André Breton'un manifestolarıyla kurumsallaşan akım; mantığın sınırlarını zorlayarak, alışılmış ilişki ve anlam örgülerini bozmayı, böylece yeni düşünsel ve estetik imkânlar açmayı amaçladı.</p>
+
+    <h2 id="tarihsel-arkaplan">Tarihsel Arka Plan ve Freud Etkisi</h2>
+    <p>Sürrealizmin ortaya çıkışında I. Dünya Savaşı sonrası toplumsal travma, Dada hareketinin reddediciliği ve Sigmund Freud'un psikanaliz teorileri büyük rol oynadı. Freud'un rüya yorumu, bilinçdışı arzular teorisi ve serbest çağrışım teknikleri, sanatçıların yeni içeriğe ulaşma metodolojilerini etkiledi. Breton ve arkadaşları, rasyonalitenin çöküntüsüne bir tepki olarak bilinçdışını yaratıcı bir kaynak olarak benimsedi.</p>
+
+    <h2 id="ilkeler-ve-yontemler">Temel İlkeler ve Yöntemler</h2>
+    <p>Sürrealistler, bilincin denetimini azaltarak spontanlığı ve rastlantıyı artırmak için çeşitli teknikler geliştirdiler:</p>
+    <ul>
+      <li><strong>Otomatizm (Automatic Writing/Drawing):</strong> Bilinçli kontrolü azaltıp doğrudan bilinçdışından gelen ifadeleri yakalamaya çalışır; yazı, çizim veya akışkan performanslar şeklinde uygulanır.</li>
+      <li><strong>Kolaj ve Montaj:</strong> Farklı görsel öğelerin beklenmedik biçimde bir araya getirilmesi suretiyle yeni anlam katmanları oluşturulur.</li>
+      <li><strong>Yolculuk ve Kesintili Mantık:</strong> Mantıklı neden-sonuç zincirleri kırılır; nesneler metaforik ilişkiler içine sokulur (ör. beklenmedik büyüklük/ortam değişimleri).</li>
+      <li><strong>Parçalama ve Yeniden Birleştirme:</strong> İnsan, hayvan ve nesne formları birleştirilerek gerçeküstü kompozisyonlar yaratılır.</li>
+    </ul>
+
+    <h2 id="onemli-sanatcilar">Önemli Temsilciler ve İkonik Eserler</h2>
+    <p>Başlıca sürrealist isimler ve bazı önemli eserleri:</p>
+    <ul>
+      <li><strong>Salvador Dalí:</strong> Aşırı gerçekçilikle rüya mantığını birleştirdi; "Belleğin Azmi" (The Persistence of Memory) eriyen saat imgeleriyle hafızanın çarpıtılmasını gösterir.</li>
+      <li><strong>Max Ernst:</strong> Otomatik teknikler ve frottage (sürtme) yöntemleriyle tanınır; "The Elephant Celebes" gerçeküstü şiddetli imgeler içerir.</li>
+      <li><strong>René Magritte:</strong> Günlük nesneleri alışılmadık bağlamlara yerleştirerek anlamın kaymasını gösterir; "Ceci n'est pas une pipe" (Bu bir pipo değildir) eseri göstergenin oyununu sorgular.</li>
+      <li><strong>André Breton:</strong> Kuramsal kurgunun baş aktörüdür; Sürrealist manifestolarla hareketin estetik ve politik hatlarını belirlemiştir.</li>
+    </ul>
+
+    <h2 id="edebiyat-ve-sinemadaki-yansimalari">Edebiyat, Sinema ve Tasarımdaki Yansımaları</h2>
+    <p>Sürrealizm yalnızca resim veya heykel ile sınırlı kalmadı; edebiyatta akışkan anlatılar, bilinç akışı teknikleri ve beklenmedik metaforlar kullanıldı. Sinemada Luis Buñuel ve Salvador Dalí'nin ortaklaşa yönettiği "Un Chien Andalou" gibi kısa filmler, rasyonel mantığı parçalayarak yeni anlatı formları denediler. Ayrıca moda, grafik tasarım ve sahne sanatlarında da gerçeküstü estetik izleri görüldü.</p>
+
+    <h2 id="etki-ve-miras">Günümüz Sanatına Etkisi ve Eleştiriler</h2>
+    <p>Sürrealizm, çağdaş sanatın kavramsal güçlü damarlarından biri oldu: kavramsal sanat, performans ve enstalasyon sanatına ilham verdi. Ancak akım, eleştirilere de maruz kaldı; bazı eleştirmenler sürrealist çalışmaları psikolojik kaçış, erkek-dominant bakış açısı veya politik açıdan belirsizlikle suçladı. Yine de sürrealist pratiklerin deneysel doğası, sanat üretiminde risk almayı ve yeni ifade yolları aramayı teşvik etti.</p>
+
+    <h2 id="btu-gecerken-yorum">BTÜ Geçerken Yorumu</h2>
+    <p>Bir mühendislik veya fen öğrencisi için Sürrealizm, mantığın sınırlarını zorlamanın ve alışılmış düşünce kalıplarını bozmanın bir metaforudur. Yenilik, bazen beklenmedik bağlantılar kurmakla doğar; Sürrealistler bunun yöntemsel bir yolunu bize gösterir. Akademide disiplinlerarası projeler yaparken, bilinçdışı çağrışımları hesaba katmak ve rastlantısal keşiflere alan açmak yaratıcı çözümler üretebilir.</p>
+
+    <div class="sources-section">
+      <span class="toc-title">Faydalı Linkler</span>
+      <div class="sources-grid">
+        <a href="https://www.moma.org/collection/works?department_id=10" class="source-tag" target="_blank"><i class="fas fa-link"></i> MoMA — Surrealism Collection</a>
+        <a href="https://www.tate.org.uk/art/art-terms/s/surrealism" class="source-tag" target="_blank"><i class="fas fa-link"></i> Tate — Surrealism</a>
+        <a href="https://www.britannica.com/art/Surrealism" class="source-tag" target="_blank"><i class="fas fa-link"></i> Britannica — Surrealism</a>
+        <a href="https://btugecerken.com/kubizm.html" class="source-tag" target="_blank"><i class="fas fa-link"></i> Önceki Durak: Kübizm</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+<script>
+  document.querySelectorAll('.toc-box a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+              const headerOffset = 100;
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+              window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+          }
+      });
+  });
+</script>
+
+<script src="navbar.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

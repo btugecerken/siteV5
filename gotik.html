@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotik | BTU Geçerken Blog</title>
+    <link href="https://cdn1.site-media.eu/images/114/22934790/GeerkenLogo-Photoroom-82aMDiSMSNM52OeysD1XRQ-EgWrwxwoIVNv8WhyNw0qWA.png" rel="icon" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Serif+TR:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    
+    <!-- Yollar klasör yapısına göre güncellendi -->
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .blog-container{max-width:860px;margin:40px auto 80px;background:var(--white);padding:50px 60px;border-radius:20px;box-shadow:var(--shadow);position:relative}
+        .hero-section{border-bottom:1px solid #eee;padding-bottom:30px;margin-bottom:40px}.badge{display:inline-block;background:rgba(26,92,58,0.08);color:var(--emerald);padding:6px 14px;border-radius:50px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:15px}
+        h1{font-family:'Amiri',serif;font-size:42px;line-height:1.25;margin-bottom:20px;color:var(--ink)}
+        .meta-info{font-family:'Syne',sans-serif;font-size:13px;color:var(--muted);display:flex;gap:20px;margin-bottom:20px}.meta-info i{color:var(--gold);margin-right:5px}
+        .summary-box{font-style:italic;border-left:3px solid var(--gold);padding:5px 0 5px 20px;color:var(--ink-soft);margin-bottom:30px}
+        .toc-box{background:#f9f8f4;border:1px solid var(--border);border-radius:12px;padding:25px;margin:40px 0}.toc-title{font-family:'Syne',sans-serif;font-weight:800;text-transform:uppercase;font-size:14px;letter-spacing:0.1em;color:var(--emerald);margin-bottom:15px;border-bottom:2px solid var(--emerald);display:inline-block}
+        .toc-box ul{list-style:none}.toc-box li{margin-bottom:10px}.toc-box a{text-decoration:none;color:var(--ink-soft);font-weight:500;font-size:15px;transition:color .2s;display:flex;align-items:center;gap:10px}.toc-box a:hover{color:var(--emerald)}.toc-box i{font-size:10px;color:var(--gold)}
+        .content p{font-size:17px;margin-bottom:25px;text-align:justify}h2{font-family:'Amiri',serif;font-size:28px;margin:50px 0 25px;color:var(--emerald-d);position:relative;padding-bottom:10px}h2::after{content:'';position:absolute;bottom:0;left:0;width:60px;height:3px;background:var(--gold);border-radius:2px}h3{font-family:'Amiri',serif;font-size:24px;margin:35px 0 15px;color:var(--ink);border-left:4px solid var(--emerald);padding-left:15px}
+        .sources-section{margin-top:60px;padding-top:30px;border-top:2px dashed #eee}.sources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:20px}.source-tag{background:white;border:1px solid #eee;padding:10px 15px;border-radius:8px;text-decoration:none;color:var(--emerald);font-size:13px;font-family:'Syne',sans-serif;font-weight:600;display:flex;align-items:center;gap:8px;transition:all .2s}.source-tag:hover{background:var(--emerald);color:white;transform:translateY(-2px)}
+        @media (max-width:768px){.blog-container{padding:30px 20px;border-radius:0;margin:0}h1{font-size:32px}nav{display:none}}
+        }
+    </style>
+</head>
+
+<body>
+	<!-- MODÜLER NAVBAR -->
+<header class="custom-navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="https://cdn1.site-media.eu/images/114/22934790/GeerkenLogo-Photoroom-82aMDiSMSNM52OeysD1XRQ-EgWrwxwoIVNv8WhyNw0qWA.png" alt="BTÜ Geçerken">
+      <div class="nav-logo-text">
+        <span class="nav-univ">Bursa Teknik Üniversitesi</span>
+        <span class="nav-comm">Geçerken Topluluğu</span>
+      </div>
+    </a>
+    <nav id="main-nav">
+      <a href="index.html" class="nav-link">Ana Sayfa</a>
+      <a href="etkinlikler.html" class="nav-link">Etkinlikler</a>
+      <a href="btugecerkenblog.html" class="nav-link active">BTU Geçerken BLOG</a>
+      <a href="https://btugecerkenai.btugecerken.com" class="nav-link">BTU GEÇERKEN AI</a>
+      <a href="ekibimiz.html" class="nav-link">Ekibimiz</a>
+      <a href="https://account.btugecerken.com" target="_blank" class="nav-btn-login">BTU GEÇERKEN ACCOUNT</a>
+    </nav>
+    <button id="mobile-menu-btn" aria-label="Menüyü aç/kapat">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<article class="blog-container">
+  <div class="hero-section">
+    <span class="badge">Sanat Tarihi</span>
+    <h1>Gotik Sanatı Nedir? Özellikleri ve Tarihi</h1>
+    <div class="meta-info">
+      <span><i class="far fa-user"></i>BTÜ Geçerken Editör Ekibi</span>
+      <span><i class="far fa-calendar"></i> 30 Temmuz 2026</span>
+      <span><i class="far fa-clock"></i> 10–15 dk okuma</span>
+    </div>
+    <div class="summary-box">
+      "Gotik sanatı, 12. yüzyılda Avrupa'da yükselişe geçen, mimarisinde taşın kaldırılması, cam mozaiklerin kullanımı ve yüksek kemerli yapılarla tanınan bir Orta Çağ sanat akımıdır. Bu yazıda Gotik sanatının özellikleri, tarihi gelişimi ve önemli temsilcileri hakkında bilgi edineceksiniz."
+    </div>
+  </div>
+
+  <div class="toc-box">
+    <span class="toc-title">İçindekiler</span>
+    <ul>
+      <li><a href="#giris"><i class="fas fa-chevron-right"></i> Giriş: Gotik Sanatı Nedir?</a></li>
+      <li><a href="#tarihsel-gelisim"><i class="fas fa-chevron-right"></i> Tarihsel Gelişimi</a></li>
+      <li><a href="#ozellikleri"><i class="fas fa-chevron-right"></i> Gotik Sanatının Özellikleri</a></li>
+      <li><a href="#gotik-mimari"><i class="fas fa-chevron-right"></i> Gotik Mimarisi</a></li>
+      <li><a href="#gotik-resim-heykel"><i class="fas fa-chevron-right"></i> Gotik Resim ve Heykel</a></li>
+      <li><a href="#onemli-eserler"><i class="fas fa-chevron-right"></i> Önemli Eserler</a></li>
+      <li><a href="#btu-gecerken-yorum"><i class="fas fa-chevron-right"></i> BTÜ Geçerken Yorumu</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2 id="giris">Giriş: Gotik Sanatı Nedir?</h2>
+    <p>Gotik sanatı, 12. yüzyılda Avrupa'da yükselişe geçen, mimarisinde taşın kaldırılması, cam mozaiklerin kullanımı ve yüksek kemerli yapılarla tanınan bir Orta Çağ sanat akımıdır. Bu dönem, Roma İmparatorluğu'nun çöküşünden sonra başlayan Orta Çağ'ın sonlarına denk gelir. Gotik sanatı, önceki Romanesk dönemine kıyasla daha aydınlık, daha dik ve daha havadar bir atmosfer yaratmayı amaçlamıştır. Bu tarz, özellikle kiliselerde kendini göstermiş ve dini mekânların inanç dolu bir atmosfer yaratması için kullanılmıştır.</p>
+
+    <h2 id="tarihsel-gelisim">Tarihsel Gelişimi</h2>
+    <p>Gotik sanatı, ilk olarak 12. yüzyılın başlarında Fransa'da ortaya çıkmıştır. Bu dönemin gelişiminde, özellikle Paris yakınlarındaki Saint-Denis Manastırı'nın keşişi Abbot Suger'in etkisi büyüktür. Suger, kilisenin yeniden inşa edilmesinde, ışığın kilise içinde yaratacağı ruhsal etkiyi önemsemiştir. Bu doğrultuda, taş duvarları incelterek cam mozaiklerin kullanılmasına olanak tanımıştır. Gotik tarz, daha sonra Fransa'nın diğer bölgelerine ve Avrupa'nın geri kalanına yayılmıştır. 13. ve 14. yüzyıllarda zirveye ulaşan Gotik sanatı, Rönesans'ın yükselişiyle birlikte yerini yeni anlayışlara bırakmıştır.</p>
+
+    <h2 id="ozellikleri">Gotik Sanatının Özellikleri</h2>
+    <p>Gotik sanatı, aşağıdaki özelliklerle karakterizedir:</p>
+    <ul>
+      <li><strong>Yükseklik ve Dikeylik:</strong> Yapılar mümkün olduğu kadar yüksek inşa edilmiştir. Dikey çizgiler, bakanın bakışlarını gökyüzüne yöneltmesini sağlamıştır.</li>
+      <li><strong>Işık ve Renk:</strong> Büyük cam mozaikler (vitrail) kullanılarak kilise içlerine renkli ışıklar sızdırılmıştır. Bu ışıklar, inançlılarda ruhsal bir atmosfer yaratmıştır.</li>
+      <li><strong>İnce Duvarlar ve Dış İskelet:</strong> Taş duvarlar inceltilmiş ve destekleyici unsurlar dışa alınmıştır. Bu sayede iç mekânlar daha açık ve aydınlık hale gelmiştir.</li>
+      <li><strong>Gerginlik ve Hareket:</strong> Mimari unsurlar, birbirlerine bağlı gibi görünerek yapıda gerginlik yaratmıştır. Bu da yapıya dinamik bir görünüm kazandırmıştır.</li>
+    </ul>
+
+    <h2 id="gotik-mimari">Gotik Mimarisi</h2>
+    <p>Gotik mimarisi, özellikle kiliselerde kendini göstermiştir. Bu yapılar, yüksek kemerler, iri penceresi ve dış iskeletleri ile tanınır. Önemli örnekleri şunlardır:</p>
+    <ul>
+      <li><strong>Notre-Dame Cathedral (Paris, Fransa):</strong> Gotik mimarinin en iyi örneklerinden biridir. 1163 yılında inşa edilmeye başlanmıştır.</li>
+      <li><strong>Cologne Cathedral (Köln, Almanya):</strong> 1248 yılında inşa edilmeye başlanan bu katedral, Gotik mimarinin en görkemli örneklerinden biridir.</li>
+      <li><strong>Canterbury Cathedral (İngiltere):</strong> Thomas Becket'in öldürülmesiyle ünlüdür. Gotik stilin İngiltere'deki gelişiminde önemli bir yer tutar.</li>
+    </ul>
+
+    <h2 id="gotik-resim-heykel">Gotik Resim ve Heykel</h2>
+    <p>Gotik dönemde resim ve heykel sanatları da gelişmiştir. Özellikle manastır illüminasyonları, kilise vitrayları ve ahşap/taş heykeller bu dönemin önemli sanat dallarıdır.</p>
+    <ul>
+      <li><strong>Illüminasyonlar:</strong> El yazması kitaplara yapılan minyatürler son derece detaylı ve renkli idi.</li>
+      <li><strong>Heykeller:</strong> Kilise kapıları, sütun başlıkları ve rahip figürleri gibi yerlerde kullanılan taş ve ahşap heykeller, genellikle dini figürleri tasvir ederdi.</li>
+    </ul>
+
+    <h2 id="onemli-eserler">Önemli Eserler</h2>
+    <p>Gotik sanatın önemli eserleri şunlardır:</p>
+    <ul>
+      <li><strong>Chartres Cathedral (Fransa):</strong> Gotik mimarinin başyapıtlarından biridir. İçindeki vitraylar, 12. yüzyıldan kalma en iyi örneklerdendir.</li>
+      <li><strong>Salisbury Cathedral (İngiltere):</strong> 1220'lerde inşa edilen bu katedral, İngiliz Gotik tarzının en güzel örneklerinden biridir.</li>
+    </ul>
+
+    <h2 id="btu-gecerken-yorum">BTÜ Geçerken Yorumu</h2>
+    <p>Gotik sanatı, sadece bir mimari anlayış değil, aynı zamanda Orta Çağ Avrupası'nın dini, kültürel ve teknolojik gelişimini de yansıtan bir bütündür. Üniversite öğrencileri için, Gotik dönem, sanatın toplumsal işlevlerini ve tarihsel bağlamlarını incelemek açısından değerli bir konudur. Gotik yapıların mimari detaylarını incelemek, o dönemin mühendislik başarısını ve estetik anlayışını anlamak açısından çok faydalıdır. Ayrıca, bu yapıların bugünkü durumu ve koruma çabaları da güncel kültürel miras çalışmalarının önemli konularındandır.</p>
+
+    <div class="sources-section">
+      <span class="toc-title">Faydalı Linkler</span>
+      <div class="sources-grid">
+        <a href="https://www.wga.hu/index.html" class="source-tag" target="_blank"><i class="fas fa-link"></i> Web Gallery of Art</a>
+        <a href="https://www.metmuseum.org/toah/hd/goth/hd_goth.htm" class="source-tag" target="_blank"><i class="fas fa-link"></i> The Metropolitan Museum of Art - Gothic Art</a>
+        <a href="https://www.britannica.com/art/Gothic-art" class="source-tag" target="_blank"><i class="fas fa-link"></i> Britannica - Gothic Art</a>
+        <a href="https://www.khanacademy.org/humanities/monarchy-enlightenment/gothic/v/gothic-overview" class="source-tag" target="_blank"><i class="fas fa-link"></i> Khan Academy - Gothic Art</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+<script>
+  document.querySelectorAll('.toc-box a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+              const headerOffset = 100;
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+              window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+          }
+      });
+  });
+</script>
+
+<script src="navbar.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

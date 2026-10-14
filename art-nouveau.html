@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Nouveau | BTU Geçerken Blog</title>
+    <link href="https://cdn1.site-media.eu/images/114/22934790/GeerkenLogo-Photoroom-82aMDiSMSNM52OeysD1XRQ-EgWrwxwoIVNv8WhyNw0qWA.png" rel="icon" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Serif+TR:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    
+    <!-- Yollar klasör yapısına göre güncellendi -->
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .blog-container{max-width:860px;margin:40px auto 80px;background:var(--white);padding:50px 60px;border-radius:20px;box-shadow:var(--shadow);position:relative}
+        .hero-section{border-bottom:1px solid #eee;padding-bottom:30px;margin-bottom:40px}.badge{display:inline-block;background:rgba(26,92,58,0.08);color:var(--emerald);padding:6px 14px;border-radius:50px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:15px}
+        h1{font-family:'Amiri',serif;font-size:42px;line-height:1.25;margin-bottom:20px;color:var(--ink)}
+        .meta-info{font-family:'Syne',sans-serif;font-size:13px;color:var(--muted);display:flex;gap:20px;margin-bottom:20px}.meta-info i{color:var(--gold);margin-right:5px}
+        .summary-box{font-style:italic;border-left:3px solid var(--gold);padding:5px 0 5px 20px;color:var(--ink-soft);margin-bottom:30px}
+        .toc-box{background:#f9f8f4;border:1px solid var(--border);border-radius:12px;padding:25px;margin:40px 0}.toc-title{font-family:'Syne',sans-serif;font-weight:800;text-transform:uppercase;font-size:14px;letter-spacing:0.1em;color:var(--emerald);margin-bottom:15px;border-bottom:2px solid var(--emerald);display:inline-block}
+        .toc-box ul{list-style:none}.toc-box li{margin-bottom:10px}.toc-box a{text-decoration:none;color:var(--ink-soft);font-weight:500;font-size:15px;transition:color .2s;display:flex;align-items:center;gap:10px}.toc-box a:hover{color:var(--emerald)}.toc-box i{font-size:10px;color:var(--gold)}
+        .content p{font-size:17px;margin-bottom:25px;text-align:justify}h2{font-family:'Amiri',serif;font-size:28px;margin:50px 0 25px;color:var(--emerald-d);position:relative;padding-bottom:10px}h2::after{content:'';position:absolute;bottom:0;left:0;width:60px;height:3px;background:var(--gold);border-radius:2px}h3{font-family:'Amiri',serif;font-size:24px;margin:35px 0 15px;color:var(--ink);border-left:4px solid var(--emerald);padding-left:15px}
+        .sources-section{margin-top:60px;padding-top:30px;border-top:2px dashed #eee}.sources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:20px}.source-tag{background:white;border:1px solid #eee;padding:10px 15px;border-radius:8px;text-decoration:none;color:var(--emerald);font-size:13px;font-family:'Syne',sans-serif;font-weight:600;display:flex;align-items:center;gap:8px;transition:all .2s}.source-tag:hover{background:var(--emerald);color:white;transform:translateY(-2px)}
+        @media (max-width:768px){.blog-container{padding:30px 20px;border-radius:0;margin:0}h1{font-size:32px}nav{display:none}}
+        }
+    </style>
+</head>
+<body>
+<!-- MODÜLER NAVBAR -->
+<header class="custom-navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="https://cdn1.site-media.eu/images/114/22934790/GeerkenLogo-Photoroom-82aMDiSMSNM52OeysD1XRQ-EgWrwxwoIVNv8WhyNw0qWA.png" alt="BTÜ Geçerken">
+      <div class="nav-logo-text">
+        <span class="nav-univ">Bursa Teknik Üniversitesi</span>
+        <span class="nav-comm">Geçerken Topluluğu</span>
+      </div>
+    </a>
+    <nav id="main-nav">
+      <a href="index.html" class="nav-link">Ana Sayfa</a>
+      <a href="etkinlikler.html" class="nav-link">Etkinlikler</a>
+      <a href="btugecerkenblog.html" class="nav-link active">BTU Geçerken BLOG</a>
+      <a href="https://btugecerkenai.btugecerken.com" class="nav-link">BTU GEÇERKEN AI</a>
+      <a href="ekibimiz.html" class="nav-link">Ekibimiz</a>
+      <a href="https://account.btugecerken.com" target="_blank" class="nav-btn-login">BTU GEÇERKEN ACCOUNT</a>
+    </nav>
+    <button id="mobile-menu-btn" aria-label="Menüyü aç/kapat">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<article class="blog-container">
+  <div class="hero-section">
+        <span class="badge">Sanat</span>
+        <h1>Art Nouveau (Yeni Sanat)</h1>
+        <div class="meta-info">
+            <span><i class="far fa-user"></i>BTU Geçerken Account Ekibi</span>
+            <span><i class="far fa-calendar"></i> 22 Temmuz 2026</span>
+            <span><i class="far fa-clock"></i> 5 dk okuma</span>
+        </div>
+        <div class="summary-box">
+          <p> Sanat tarihinin en estetik, en "kıvrımlı" ve en özgün dönemlerinden biri olan Art 
+              Nouveau'yu&nbsp;</p>
+            <p>(Yeni Sanat) adım adım, temel mantığıyla incelemeye başlayalım. </p>
+      </div>
+    </div>
+
+    <div class="toc-box">
+        <span class="toc-title">İçindekiler</span>
+        <ul id="toc-list">
+            <li><a href="#dogus"><i class="fas fa-chevron-right"></i>  Neden Doğdu? (Tarihsel Arka Plan) </a></li>
+            <li><a href="#sanat-zanaat"><i class="fas fa-chevron-right"></i>  "Estetik Bir Çöl" Yaratmak</a></li>
+            <li><a href="#doga"><i class="fas fa-chevron-right"></i> Doğanın Yorumu </a></li>
+            <li><a href="#ozellikleri"><i class="fas fa-chevron-right"></i> Art Nouveau'nun Özellikleri</a></li>
+            <li><a href="#dagilim"><i class="fas fa-chevron-right"></i> Art Nouveau'nun Bazı Ülkelerdeki Yansıması</a></li>
+            <li><a href="#yorum"><i class="fas fa-chevron-right"></i> BTÜ Geçerken Yorumu</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+      <h2 id="dogus"> Neden Doğdu? (Tarihsel Arka Plan) </h2>
+        <p>Art Nouveau bir "isyan"dır. 19. yüzyılın sonunda Avrupa’da Sanayi Devrimi tüm hızıyla 
+          devam ediyordu. Fabrikalar artık birbirinin aynısı, ruhsuz, seri üretim mobilyalar ve 
+          eşyalar üretiyordu.&nbsp;</p>
+      <p>&nbsp;● Sorun: Sanat, müzelerin içine hapsedilmişti; hayat ise sanattan yoksun, gri ve 
+          mekanikleşmişti.&nbsp;</p>
+      <p>&nbsp;● Tepki: Sanatçılar ve zanaatkarlar "Yeter!" dediler. "Sanat sadece bir tabloda değil, 
+          oturduğumuz sandalyede, evimizin kapı kolunda, içtiğimiz bardağın tasarımında 
+          olmalı" dediler. Yani sanatı sokağa, hayatın tam merkezine indirmeyi hedeflediler. </p>
+      <p>Temel Felsefesi (Doğanın Taklidi değil, Yorumu) 
+          Art Nouveau'nun ana kaynağı doğadır. Ancak doğayı olduğu gibi kopyalamazlar.&nbsp;</p>
+      <p>&nbsp;● Kıvrımlı Hatlar (Whip-lash): En belirgin özelliği "kamçı darbesi" denilen, bitkilerin 
+        sapları gibi kıvrılan, akışkan çizgilerdir.&nbsp;</p>
+      <p>&nbsp;● Asimetri: Simetriyi reddederler. Doğada mükemmel bir simetri yoktur, bu yüzden 
+        tasarımda da asimetriyi benimserler.&nbsp;</p>
+<p>&nbsp;● Bütüncül Tasarım: Bir binayı yaparken sadece dış cepheyi değil; kapı kolundan 
+          vitrayına, duvar kağıdından mobilyasına kadar her detayı aynı estetik dille 
+          tasarlarlar.</p>
+        <p>Görsel Dil (Neye Bakmalısın?) 
+          Eğer bir binanın veya objenin Art Nouveau olup olmadığını anlamak istersen şunlara 
+          bak:&nbsp;</p>
+      <p>&nbsp;1. Bitkisel Motifler: Sarmaşıklar, zambaklar, nilüferler, orkideler.&nbsp;</p>
+      <p>&nbsp;2. Kadın Figürleri: Uzun saçlı, gizemli, kıyafetleri bitki kıvrımlarıyla bütünleşmiş 
+          kadın figürleri.</p>
+      <p>&nbsp;3. Malzeme Kullanımı: Demir, cam ve seramik gibi malzemelerin sanatla birleşimi. 
+          Özellikle demiri, taş gibi ağır değil, bir çiçek sapı gibi ince ve kıvrımlı işlediler.</p>
+	  <p>İsimler ve Coğrafya 
+		  Art Nouveau tek bir isimle anılmadı, her yerde farklı bir yerel ismi oldu:&nbsp;</p>
+	  <p>&nbsp;● Fransa/Belçika: Art Nouveau (Yeni Sanat)&nbsp;</p>
+	  <p>&nbsp;● Almanya: Jugendstil (Gençlik Tarzı)&nbsp;</p>
+	  <p>&nbsp;● Avusturya: Sezession (Sezesyonizm - Yani "ayrılıkçı")&nbsp;</p>
+	  <p>&nbsp;● İtalya: Stile Liberty&nbsp;</p>
+		<p>&nbsp;Özetle: Art Nouveau, sanayileşmenin getirdiği "standartlaşmaya" karşı, "sanatın her 
+		  yerde olması gerektiğini" savunan, doğanın kıvrımlarını sanata dönüştüren bir "total 
+		  tasarım" hareketidir. 
+		  Bu "isyan" noktası, aslında sadece bir sanat akımının başlangıcı değil, modern insanın 
+		  makineleşen dünyaya karşı ilk büyük varoluşsal çığlığıdır. Burayı biraz daha derinleştirip, 
+		  o dönemin ruhunu anlamaya çalışalım</p>
+		
+		
+<h2 id="sanat-zanaat"> "Estetik Bir Çöl" Yaratmak</h2>
+        <p>19. yüzyılın sonlarına gelindiğinde, Sanayi Devrimi'nin ilk şaşkınlığı geçmiş, yerini 
+  "verimlilik" tutkusuna bırakmıştı. Fabrikalar, el işçiliğinin yavaşlığını bir kenara 
+          bırakıp seri üretime geçti.&nbsp;</p>
+      <p>&nbsp;● Sorun şuydu: Bir masa yapılıyordu ama o masanın üzerinde hiçbir "ruh" yoktu. Bir 
+          vazo üretiliyordu ama binlerce insan aynı vazoyu kullanıyordu. Sanat, zenginlerin 
+          salonlarına veya müzelerin "dokunulmaz" odalarına hapsedilmiş, günlük hayat ise 
+          fabrikasyon bir estetikle çölleşmişti.</p>
+      <p>&nbsp;● İşte Art Nouveau sanatçıları bu "tekdüzelik"ten nefret ediyordu. Onlar için seri 
+          üretim, insan ruhunun körelmesi demekti. </p>
+	  <p>"Sanat ve Zanaat" Ayrımının Yıkılması 
+		  O zamana kadar sanat dünyasında keskin bir hiyerarşi vardı:&nbsp;</p>
+	  <p>&nbsp;● "Yüksek Sanat": Resim, heykel, mimari (Bunlar "gerçek" sanattı).</p>
+	  <p>&nbsp;● "Dekoratif Sanatlar": Mobilya, mücevher, seramik, tekstil (Bunlar "ikinci sınıf" 
+		  zanaat sayılırdı). 
+		  Art Nouveau, "İkinci sınıf diye bir şey yoktur!" dedi. Bir kapı kolunu tasarlayan sanatçı ile 
+		  bir tablo yapan ressamın aynı derecede değerli olduğunu savundu. Bu, o dönem için 
+		  devrimci bir fikirdi. Bir binanın kapı kolu, binanın dış cephesi kadar önemliydi. </p>
+	  <p>Makineye Karşı "Organik" Bir Kalkan 
+		  Sanayi Devrimi'nin getirdiği geometri (dik açılar, düz çizgiler, ızgara planlar, demir ve 
+		  çelik yığınları) sanatçılara "ölü" geliyordu. Makine, düz çizgiyi seviyordu; doğa ise asla 
+		  düz değildi.&nbsp;</p>
+	  <p>&nbsp;● İsyanın Dili: Sanatçılar, makinenin getirdiği o "soğuk ve düz" dünyaya karşı, 
+		  doğanın "sıcak ve kıvrımlı" dilini bir kalkan olarak kullandılar.&nbsp;</p>
+	  <p>&nbsp;● Bir binanın taşıyıcı kolonunu bir ağaç gövdesi gibi, pencere çerçevelerini ise bir 
+		  sarmaşık gibi tasarladılar. "Makineleşiyorsak, ruhumuzu kaybetmemek için 
+		  doğaya geri dönmeliyiz" dediler.</p>
+	  <p> <b>Neden Şimdi? (Psikolojik Arka Plan)&nbsp;</b></p>
+		<p>&nbsp;İnsanlar ilk kez büyük kentlere yığılmış, kalabalıklaşmış ve yalnızlaşmışlardı. 
+		  Sanayileşmenin yarattığı o "gri" şehir hayatı, insanı bir dişliye dönüştürüyordu. Art 
+		  Nouveau, bu yabancılaşmaya karşı bir sığınaktı. İnsan, evine girdiğinde fabrikasyon 
+		  ürünler yerine, el emeğiyle işlenmiş, doğayı hatırlatan bir estetikle karşılaşmak istiyordu. </p>
+		
+<h2 id="neden">Doğanın Yorumu</h2>
+        <p> <b>"Kamçı Darbesi" (Whip-lash) ve Enerjinin Görselleşmesi</b>&nbsp;</p>
+      <p>&nbsp;"Kamçı darbesi" çizgisi, bir bitkinin sadece şeklini değil, büyüme enerjisini temsil eder. 
+          Bir çiçeğin topraktan çıkıp göğe doğru uzanırken yaptığı o zarif, bazen sert, bazen 
+          yumuşak kıvrımı düşün.&nbsp;</p>
+      <p>&nbsp;● Neden Önemli? Art Nouveau sanatçıları için düz çizgi "ölü"ydü. Düz çizgi, insanın 
+          doğaya müdahalesini ve makineyi temsil ediyordu. Kıvrımlı hat ise hayatın 
+          kendisini temsil ediyordu.&nbsp;</p>
+      <p>&nbsp;● Bu çizgiler bir binanın demir korkuluğunda veya bir sandalyenin bacağında 
+          kullanıldığında, o nesneye "hareket ediyor" hissi verirdi. Nesne, statik bir obje 
+          olmaktan çıkıp, yaşayan bir organizmaya dönüşürdü.</p>
+	  <p><b>Asimetrinin Getirdiği "Doğallık"</b>&nbsp;</p>
+	  <p>&nbsp;Klasik mimaride (örneğin Rönesans veya Barok döneminde) her şey "denge" ve "simetri" 
+		  üzerine kuruludur. Sağ taraf neyse, sol taraf da odur. Art Nouveau bunu reddeder çünkü 
+  "Doğa simetrik değildir."&nbsp;</p>
+	  <p>&nbsp;● Bir ağaca bak; hiçbir dal bir diğerinin aynısı değildir. Bir yaprağın damarları 
+		  simetrik dağılmaz.&nbsp;</p>
+		<p>&nbsp;● Art Nouveau sanatçıları, asimetriyi kullanarak "öngörülemezliği" tasarıma 
+		  soktular. İnsan gözü simetriye alıştığında bir süre sonra nesneyi görmezden 
+		  gelmeye başlar. Asimetri ise gözü sürekli hareket ettirir, nesneyi keşfetmeye 
+		  zorlar. Bu, tasarımı "sürprizli" kılar. </p>
+	  <p><b>"Total Tasarım" (Gesamtkunstwerk) </b>&nbsp;</p>
+	  <p>Bu, Art Nouveau'nun en radikal tarafıdır. Almanlar buna "Gesamtkunstwerk" (Bütüncül 
+		  Sanat Eseri) derler.&nbsp;</p>
+	  <p>&nbsp;● Mantık şudur: Eğer sadece binanın dışını süsleyip içini sıradan bırakırsan, o 
+		  sanat eseri değildir, sadece bir "maske"dir.&nbsp;</p>
+	  <p>&nbsp;● Art Nouveau sanatçısı, o binanın içine giren kişinin yürürken bastığı zeminden, 
+		  tutunduğu trabzana, ışığın süzüldüğü vitraydan, oturduğu koltuğun kumaşına 
+		  kadar her şeyin aynı "doğal akış" dilini konuşmasını isterdi.&nbsp;</p>
+	  <p>&nbsp;● Böylece binaya giren kişi, dış dünyanın mekanik ve gri gerçekliğinden tamamen 
+		  kopup, sanatçının yarattığı o "organik rüya dünyasının" içine girmiş olurdu.&nbsp;</p>
+		<p>&nbsp;Bir Örnekle Somutlaştıralım: 
+		  <a href= "https://btugecerken.com/AL_WOI_HM_050924_02.png">Victor Horta’nın Brüksel’deki evlerini</a> hayal et. Merdiven boşluğuna baktığında, demir 
+		  korkulukların yerden yükselen bir sarmaşık gibi kıvrıldığını, tavanın ise bu sarmaşığın 
+		  yaprakları gibi açıldığını görürsün. Işık, o kıvrımların arasından geçerek zemine 
+		  düştüğünde, yerdeki mozaiklerle birleşir. Binanın içinde yürürken, sanki bir ormanın 
+		  derinliklerinde ama bir evin konforunda hissedersin. 
+		  İşte Art Nouveau'nun "doğayı yorumlaması" budur: Doğayı bir orman fotoğrafı çekmek 
+		  gibi kopyalamazlar; doğanın "yaşama ve büyüme prensibini" alır, onu taş, demir ve 
+		  camla yeniden inşa ederler.</p>
+		
+		
+      <h2 id="ozellikleri">Art Nouveau'nun Özellikleri</h2>
+        <p> Bir Art Nouveau yapıtının veya binasının önünde 
+durduğunda, onu diğer akımlardan (örneğin Barok'un ağırlığından ya da Modernizmin o 
+dümdüz betonundan) ayıran o "görsel şifreleri" biraz daha detaylandıralım.</p>
+		
+	  <p><b> Bitkisel Motifler: Sadece Çiçek Değil, "Büyüme"</b></p>
+		<p>Art Nouveau'da bir çiçeği resmetmek, onun sadece güzel görünmesini sağlamak 
+		  değildir.&nbsp;</p>
+	  <p>&nbsp;● Odak Noktası: Nilüferler, orkideler veya süsenler (iris)... Bu çiçeklerin 
+		  seçilmesinin sebebi, saplarının uzun, esnek ve kıvrılmaya müsait olmasıdır.&nbsp;</p>
+		<p>&nbsp;● Nasıl Bakmalı? Bir kabartmaya veya vitraya bakarken çiçeğin kendisine değil, 
+		  sapının nasıl kıvrıldığına bak. O sap, binanın bir köşesini dönüyor mu? Bir 
+		  pencerenin çerçevesiyle birleşiyor mu? Eğer bitki, yapıyı "sararak" onun bir 
+		  parçası oluyorsa, orada Art Nouveau ruhu vardır.</p>
+	  <p><b>. Kadın Figürleri: "Femme Fatale" ve Doğanın Birleşimi</b></p>
+	  <p>Art Nouveau'nun kadın figürleri, Rönesans'ın o "kutsal ve ağırbaşlı" kadınlarından çok 
+		  farklıdır.&nbsp;</p>
+	  <p>&nbsp;● Gizem ve Akış: Kadınlar genellikle uzun, dalgalı saçlarıyla betimlenir. O saçlar, 
+		  tıpkı sarmaşıklar gibi vücudunun etrafında dolanır. Saç ile bitki kıvrımları birbirine 
+		  karışır; hangisi saç, hangisi yaprak ayırt edemezsin.&nbsp;</p>
+		<p>&nbsp;● Neyi Anlatır? Bu figürler genellikle "doğanın ruhunu" temsil eder. Kadın, doğanın 
+		  kendisi gibidir; hem hayat veren, hem de gizemli ve ulaşılamaz. Eğer baktığın 
+		  eserde bir kadının saçı bir dalga gibi kıvrılıp çerçeveye dönüşüyorsa, bu en saf 
+		  Art Nouveau işaretidir. </p>
+		<p><b> Malzeme Kullanımı: Demir ve Camın "İhaneti"</b></p>
+	  <p>Bu en sevdiğim kısımdır. Sanayi Devrimi'ne kadar demir, sadece "taşıyıcı" bir 
+malzemedir; kaba ve çirkindir, genelde üstü kapatılır. Art Nouveau ise demire "Sen artık 
+bir taşıyıcı değilsin, sen bir sanatçısın" dedi. 
+● Demirle Dans: Demiri döverek, sanki bir hamurmuş gibi incecik, narin, çiçek sapı 
+formlarına soktular. Bir binanın demir merdiven korkuluğuna dokunduğunda, 
+metalin soğukluğunu değil, sanki bir bitkinin gövdesine dokunuyormuşsun gibi bir 
+estetik hissedersin. 
+● Camın Rengi: Camı sadece pencere olarak değil, ışığı kıran, mekana renkli ve 
+mistik bir hava katan bir "dekor" olarak kullandılar. Renkli camlar ve demir 
+kafesler bir araya geldiğinde, mekanın içindeki ışık bile Art Nouveau'nun o 
+"yabancılaşmış dünyadan kaçış" vaadini destekler.</p>
+	  <p><b>Küçük Bir "Test" (Göz Gezdirme)&nbsp;&nbsp;</b></p>
+	  <p> Eğer internette veya bir şehirde şu üçlüden birini görürsen, hemen "Art Nouveau" 
+		  diyebilirsin:&nbsp;</p>
+	  <p>&nbsp;1. Korkuluk: Sanki metal değil de, kendi kendine büyümüş bir yosun veya sarmaşık 
+		  gibi duruyorsa.&nbsp;</p>
+	  <p>&nbsp;2. Giriş Kapısı: Dikdörtgen değil, üst kısmı yayvan veya asimetrik kemerliyse.&nbsp;</p>
+		<p>&nbsp;3. Detay: Bir binanın dış cephesinde, hiçbir işlevi olmayan ama sadece 
+		  estetik/organik bir form olarak eklenmiş "bitkisel bir süsleme" varsa. </p>
+		
+<h2 id="dagilim">Art Nouveau'nun Bazı Ülkelerdeki Yansıması</h2>
+        <p>Art Nouveau'nun "evrensel bir isyan" olduğunun kanıtı her ülke bu akımı kendi kültürel kodlarıyla harmanladı. Bu isimlerin arkasındaki 
+  "ruh" farkına biraz daha yakından bakalım, çünkü bu, akımın neden bu kadar hızlı 
+          yayıldığını açıklar:&nbsp;</p>
+      <p>&nbsp;1. Fransa ve Belçika: "Art Nouveau" (Merkez Üssü) 
+          Burası işin "ana vatanı".&nbsp;</p>
+      <p>&nbsp;● Ruh: Fransızlar için bu bir "zariflik ve lüks" arayışıydı. Paris metrosunun girişlerini 
+          tasarlayan Hector Guimard’ı düşün. O demir girişler, sanki yerin altından fışkıran 
+          dev bir bitki gibidir. Burada Art Nouveau, şehri bir "masal dünyasına" dönüştürme 
+          çabasıydı.&nbsp;</p>
+      <p>&nbsp;2. Almanya: "Jugendstil" (Gençlik Tarzı) 
+          Almanya'da bu işin adı neden "Gençlik"?&nbsp;</p>
+      <p>&nbsp;● Ruh: Çünkü bu akımı başlatanlar, sanat akademilerinin o yaşlı, tutucu ve kuralcı 
+          profesörlerine karşı çıkan genç sanatçılardı. "Eski olan her şeyi bırakın, yeni bir 
+          çağ başlıyor" dediler. Jugend (gençlik) dergisi etrafında toplandıkları için bu isimle 
+          anıldı. Alman disipliniyle, daha grafik ve keskin bir estetiğe doğru kaydılar.</p>
+      <p>&nbsp;3. Avusturya: "Sezession" (Ayrılıkçılar) 
+          Burası çok kritik. Viyana, o dönem Avrupa'nın en tutucu sanat merkezlerinden biriydi.&nbsp;</p>
+      <p>&nbsp;● Ruh: Gustav Klimt ve arkadaşları, "Sanatın, hayatın kendisi olması için" mevcut 
+          sanat kurumlarından resmen ayrıldılar. Kendi binalarını (Sezession Binası) inşa 
+          ettiler.&nbsp;</p>
+      <p>&nbsp;● Farkı: İşte burada o "yumuşak kıvrımlar" biraz daha geometrikleşmeye başladı. 
+          Altın varaklar, mozaikler ve daha simgesel, daha "sert" bir estetik doğdu. Yani Art 
+          Nouveau burada biraz daha entelektüel ve ağırbaşlı bir hal aldı.&nbsp;</p>
+      <p>&nbsp;4. İtalya: "Stile Liberty" 
+          İtalyanlar olaya biraz daha "ticari ve estetik" bir dokunuş kattı.&nbsp;</p>
+      <p>&nbsp;● Ruh: Adını, Londra’daki ünlü Liberty &amp; Co. mağazasından alır. Bu mağaza, 
+          egzotik kumaşlar ve tasarımlar satıyordu. İtalyanlar için bu akım; moda, tekstil ve 
+          lüks tasarımla birleşti. Yani İtalya'da Art Nouveau, "yaşanabilir bir lüks" haline 
+          geldi.</p>
+	  <p>Neden bu kadar farklı isimle anıldı? 
+	    Çünkü Art Nouveau bir "stil" değil, bir **"tutum"**du.&nbsp;</p>
+	  <p>&nbsp;● Fransız için "estetik bir kaçış"tı.&nbsp;</p>
+<p>&nbsp;● Alman için "nesil çatışması"ydı.&nbsp;</p>
+	  <p>&nbsp;● Avusturyalı için "kurumsal bir başkaldırı"ydı.&nbsp;</p>
+	  <p>&nbsp;● İtalyan için "modern bir yaşam tarzı"ydı.</p>
+		<p>&nbsp;Şimdi şu noktaya dikkat edelim: 
+		  Bu akım 1910'lara gelindiğinde yavaş yavaş gücünü yitirdi. Çünkü 
+		  o kadar çok "detay" ve "el işçiliği" gerektiriyordu ki, seri üretimin hızına ve ucuzluğuna 
+		  yenik düştü. Bir binayı "Art Nouveau" tarzında süslemek, modern bir gökdeleni betonla 
+		  dikmekten çok daha pahalıydı.</p>
+<h2 id="yorum">BTÜ Geçerken Yorumu</h2>
+      <p>Günümüzde minimalist tasarımlar yaygın olsa da Art Nouveau'nun doğadan ilham alan organik çizgileri hâlâ birçok mimari ve grafik tasarım çalışmasında yaşamaya devam etmektedir. Sanat ile işlevselliği bir araya getirme anlayışı, bu akımı bugün bile ilham verici kılan en önemli özelliklerden biridir.</p>
+
+        <div class="sources-section">
+            <span class="toc-title">Kaynakça / Bağlantılar</span>
+            <div class="sources-grid">
+                <a href="https://btugecerken.com" class="source-tag" target="_blank"><i class="fas fa-link"></i>BTU Geçerken Resmi Sayfası</a>
+              <a href="https://account.btugecerken.com/magazines" class="source-tag" target="_blank"><i class="fas fa-link"></i>BTU Geçerken Accunt</a>
+            </div>
+        </div>
+    </div>
+</article>
+
+<script>
+    document.querySelectorAll('.toc-box a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerOffset = 100;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+            }
+        });
+    });
+</script>
+	<script>
+ window.difyChatbotConfig = {
+  token: 'm9msFftlLZCRyPBD',
+  baseUrl: 'https://ai.btugecerken.com',
+  inputs: {
+    // You can define the inputs from the Start node here
+    // key is the variable name
+    // e.g.
+    // name: "NAME"
+  },
+  systemVariables: {
+    // user_id: 'YOU CAN DEFINE USER ID HERE',
+    // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+  },
+  userVariables: {
+    avatar_url: "https://btugecerken.com/BTU_Gecerken_AI_Blog%20Asistan.png",
+    // name: 'YOU CAN DEFINE USER NAME HERE',
+  },
+ }
+</script>
+<script
+ src="https://ai.btugecerken.com/embed.min.js"
+ id="m9msFftlLZCRyPBD"
+ defer>
+</script>
+</body>
+</html>
